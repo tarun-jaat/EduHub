@@ -1,0 +1,67 @@
+.Navbar {
+    height: 80px;
+    background-color:#e6fffe;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .Home .Navbar .Logo{
+      margin-left: -100px;
+  } */
+  .Home .Navbar .Logo > img {
+    height: 80px;
+  }
+  .NavLinks {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  .NavLinks .noneActiveNav {
+    color: #104455;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .NavLinks p:hover {
+    cursor: pointer;
+    text-decoration: 2px #3ad3cd underline;
+  }
+  .vertical-line {
+    width: 2px;
+    height: 40px;
+  
+    border-left: 2px solid #3ad3ce65;
+  }
+  .activeNav {
+    color: #3ad3cd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .SignInOut{
+      margin-right: 50px;
+  }
+  
+  @media only screen and (max-width:786px) {
+    .NavLinks,
+  .SignInOut {
+    display: none; /* Hide on mobile initially */
+  }
+
+  .hamburger-menu:checked + .NavLinks,
+  .hamburger-menu:checked + .SignInOut {
+    display: block; /* Show when menu is open */
+    position: absolute;
+    top: 100%;
+    background-color: #fff; /* Adjust for visual appeal */
+    z-index: 10;
+  }
+
+  /* Adjust other styles for smaller screens */
+}
+  

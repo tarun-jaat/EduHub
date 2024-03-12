@@ -1,0 +1,22 @@
+.container-provide-upper{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.provide-buttons{
+    display: flex;
+    gap: 20px;
+}
+.container-provide-bottom{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    gap: 100px;
+}
+.course_card{
+    height: 500px;
+    width: 400px;
+    background-color:aqua;
+}

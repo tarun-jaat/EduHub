@@ -1,0 +1,55 @@
+.works{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.container1{
+    height: auto;
+    width: 30%;
+    align-items: center;
+
+}
+.container1 >img{
+    /* height: 50rem; */
+    background-color:#acf9f6;
+    background-size: 100px 100px;
+    width: 100%;
+    box-shadow: 40px 40px 3px #0A3442; 
+
+}
+.container2{
+    width: 60%;
+    display: block;
+    padding: 30px;
+}
+.content{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+
+}
+h3{
+    color:#0A3442;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.6875rem;
+    padding: 30px;
+}
+.content p{
+    width: 200px;
+    color: rgb(99, 99, 99);
+}
+.Heading2{
+    color: #0a3442;
+    text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
