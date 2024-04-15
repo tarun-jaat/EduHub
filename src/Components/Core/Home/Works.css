@@ -6,7 +6,7 @@
 }
 .container1{
     height: auto;
-    width: 30%;
+    width: 50%;
     align-items: center;
 
 }
@@ -14,12 +14,12 @@
     /* height: 50rem; */
     background-color:#acf9f6;
     background-size: 100px 100px;
-    width: 100%;
+    width: 70%;
     box-shadow: 40px 40px 3px #0A3442; 
 
 }
 .container2{
-    width: 60%;
+    width: 50%;
     display: block;
     padding: 30px;
 }

@@ -14,7 +14,7 @@ function Works() {
         </div>
         <div className='container2'>
             <div>
-                <p className='Heading1' style={{width:"800px"}}>HOW OUR ONLINE SCHOOL WORKS</p>
+                <p className='Heading1' style={{width:"600px",fontSize:"42px"}}>HOW OUR ONLINE SCHOOL WORKS</p>
             </div>
             <div  className='content'>
                 <div  className='card card1'>
@@ -37,8 +37,6 @@ function Works() {
                     <h3>Social Interaction </h3>
                     <p>Students at connection academy collaborates on project together</p>
                 </div>
-                
-
             </div>
         </div>
     </div>

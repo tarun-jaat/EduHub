@@ -1,16 +1,19 @@
 .skills {
   margin-top: 30px;
   background: rgba(58, 211, 205, 0.33);
-  width: auto;
+  width: 100%;
   display: flex;
+  position: relative;
   justify-content: space-around;
 }
 .right-skills {
   padding: 40px;
+  position: relative;
 }
 .Heading1 {
   width: 30rem;
   color: #0a3442;
+  position: relative;
   text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
   font-family: sans-serif;
   font-size: 4.25rem;
@@ -25,6 +28,20 @@
     justify-content: center;
     width: auto;
     gap: 20px;
-    flex-basis:26%;
+    max-width: 400px;
 }
 
+@media only screen and (max-width:786px) {
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .right-skills{
+    padding: 0px;
+  }
+  .Heading1{
+    font-size: 3rem;
+  }
+
+}

@@ -10,14 +10,14 @@ function Navbar() {
     <div className='Navbar'>
             <div className='Logo'>
                 <Link  to="/">
-                <img src={LogoDark} alt="logo"/>
+                <img className='h-1 ' src={LogoDark} alt="logo"/>
                 </Link>
             </div>
             <div class="vertical-line"></div>
             <div className='NavLinks'>
             {HomeNavLinks.map((link, index) => (
             <Link to={link.path} onClick={() => setActiveLink(index)}>
-              <p className={`nav-link ${activeLink === index ? 'activeNav' : 'noneActiveNav'}`}> {link.title}  </p>
+              <p className={`nav-link ${activeLink === index ? 'activeNav' : 'noneActiveNav'}`} key={index}> {link.title}  </p>
             </Link>
           ))}
 

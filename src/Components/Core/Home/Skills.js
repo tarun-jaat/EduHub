@@ -6,7 +6,7 @@ import angular from "../../../Assests/Images/mdi_angular.svg";
 import html from "../../../Assests/Images/akar-icons_html-fill.svg";
 import css from "../../../Assests/Images/akar-icons_css-fill.svg";
 import javascript from "../../../Assests/Images/ri_javascript-fill.svg";
-import node from "../../../Assests/Images/logos_nodejs.svg";
+// import node from "../../../Assests/Images/logos_nodejs.svg";
 import mongodb from "../../../Assests/Images/teenyicons_mongodb-solid.svg";
 import vue from "../../../Assests/Images/mingcute_vue-fill.svg";
 import { LiaJava } from 'react-icons/lia';
@@ -31,7 +31,7 @@ function Skills() {
             <p style={{fontFamily:"sans-serif",fontWeight:"700" ,fontSize:"32px", color:"#0a3442"}} title='Data structure and algorithm'>DSA</p>
             <LiaJava style={{fontSize:"64px", color:"#0a3442"}} title='JAVA'/>
             <TbBrandCpp style={{fontSize:"64px", color:"#0a3442"}} title='C++'/>
-            <img className='skills-img img7' src={node} alt='node' title='NodeJS'/>
+            {/* <img className='skills-img img7' src={node} alt='node' title='NodeJS'/> */}
        </div>
     </div>
   )

@@ -13,10 +13,12 @@
     display: flex;
     justify-content: space-around;
     overflow-x: scroll;
+    scrollbar-width:  none; /* Firefox */
     gap: 100px;
 }
 .course_card{
     height: 500px;
     width: 400px;
-    background-color:aqua;
+    border: 2px solid gray;
+    border-radius: 20px;
 }

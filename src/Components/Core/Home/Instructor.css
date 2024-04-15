@@ -1,0 +1,15 @@
+.Instructor{
+    display: flex;
+padding: 5.625rem;
+justify-content: center;
+align-items: center;
+gap: 6.125rem;
+}
+.Instructor-Text{
+    display: flex;
+width: 30.375rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 3rem;
+flex-shrink: 0;
+}

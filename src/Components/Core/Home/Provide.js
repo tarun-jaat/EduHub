@@ -12,12 +12,13 @@ function Provide() {
             </div>
 
         </div>
-        <div className='container-provide-bottom'>
+        {/* <div className='container-provide-bottom'>
             <div className="course_card"></div>
             <div className="course_card"></div>
             <div className="course_card"></div>
             <div className="course_card"></div>
-        </div>
+            <div className="course_card"></div>
+        </div> */}
     </div>
   )
 }
