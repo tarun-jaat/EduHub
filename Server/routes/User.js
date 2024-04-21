@@ -8,7 +8,7 @@ const {
   signup,
   sendotp,
   changePassword,
-} = require("../controllers/Auth")
+} = require("../Controllers/Auth")
 
 const {isDemo}=require("../Middlewares/demo");
 const {

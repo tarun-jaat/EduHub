@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import authReducer from '../Slice/authSlice'
 // import cartReducer from "../slices/cartSlice"
-// import profieReducer from "../slices/profileSlice";
+import profieReducer from "../Slice/profileSlice";
 // import loadingBarReducer from "../slices/loadingBarSlice"
 // import courseReducer from '../slices/courseSlice'
 // import viewCourseReducer from "../slices/viewCourseSlice";
@@ -9,7 +9,7 @@ import authReducer from '../Slice/authSlice'
 const rootReducer=combineReducers({
     auth:authReducer,
     // cart:cartReducer,
-    // profile:profieReducer,
+    profile:profieReducer,
     // loadingBar: loadingBarReducer,
     // course:courseReducer,
     // viewCourse:viewCourseReducer,

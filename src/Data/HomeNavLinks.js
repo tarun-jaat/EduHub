@@ -20,12 +20,12 @@ export const HomeNavLinks = [
   export const SideBarLinks = [
     {
       title: "Dashboard",
-      // path: "/",
+      path: "/dashboard",
       icon:"https://svgshare.com/i/14hr.svg"
     },
     {
       title: "Myprofile",
-      // path: '/profile-Section',
+      path: "/dashboard/Profile",
       icon:"https://svgshare.com/i/14g9.svg"
     },
     {
@@ -35,12 +35,12 @@ export const HomeNavLinks = [
     },
     {
       title: "Live Classes",
-      // path: "/Live-Classes",
+      path: "/dashboard/Live-Classes",
       icon:"https://svgshare.com/i/14h8.svg"
     },
     {
       title: "Messages",
-      // path: "/Message-section",
+      path: "/dashboard/Messages",
       icon:"https://svgshare.com/i/14hg.svg"
     },
     {
