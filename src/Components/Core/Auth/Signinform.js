@@ -76,7 +76,7 @@ function Signinform() {
           </p>
         </Link>
       </label>
-      <p className="text-white">Don't Have An Account ? <Link className="text-secondary" to={'/signup'}>
+      <p className="text-white">Don't Have An Account ? <Link className="text-secondary" to='/signup'>
           SignUp
         </Link></p>
       <button

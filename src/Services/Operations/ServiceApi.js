@@ -1,19 +1,23 @@
 import { toast } from "react-hot-toast"
-
 import { setUser } from "../../Slice/profileSlice"
 import { apiConnector } from "../apiConnector"
 import { settingsEndpoints } from "../api"
 import { logout } from "./authAPI"
 
 
-const { UPDATE_DISPLAY_PICTURE_API, UPDATE_PROFILE_API,  CHANGE_PASSWORD_API,  DELETE_PROFILE_API,} = settingsEndpoints
+const { UPDATE_DISPLAY_PICTURE_API, UPDATE_PROFILE_API,  CHANGE_PASSWORD_API,  DELETE_PROFILE_API, } = settingsEndpoints
  
+
+
 
 export function updateDisplayPicture(token, formData) {
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
+    console.log("UPDATE_DISPLAY_PICTURE_API API REQUEST............", formData)
+
     try {
       const response = await apiConnector("PUT", UPDATE_DISPLAY_PICTURE_API,
+
                       formData,
                       {
                         "Content-Type": "multipart/form-data",

@@ -6,19 +6,49 @@ import { endpoints } from "../api"
 import {apiConnector} from "../apiConnector"
 import {setProgress} from "../../Slice/loadingBarSlice"
 
-
-
 const {
   SENDOTP_API,
   SIGNUP_API,
   LOGIN_API,
   RESETPASSTOKEN_API,
   RESETPASSWORD_API,
+  GET_ALL_USERS_API,
 } = endpoints
+
+
+export function fetchUsers(
+  accountType,
+      email,
+      firstName,
+      active,
+      _id,
+      image,
+      createdAt,
+) {
+  
+  return async()=>{
+  try {
+    const response = await apiConnector("GET", GET_ALL_USERS_API,{
+      accountType,
+      _id,
+      email,
+      firstName,
+      active,
+      image,
+      createdAt
+    })
+    const data = await response.json();
+  } catch (error) {
+    console.error('Error fetching users:', error);
+  }
+ 
+}
+}
+
 
 export function sendOtp(email, navigate) {
   return async (dispatch) => {
-    // const toastId = toast.loading("Loading...")
+    const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
     try {
       const response = await apiConnector("POST", SENDOTP_API, {

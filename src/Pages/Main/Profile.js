@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 export default function MyProfile(){
 
   const { user } = useSelector((state) => state.profile)
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
 

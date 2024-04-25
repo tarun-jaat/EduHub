@@ -1,31 +1,44 @@
-import React from 'react'
+// const { authenticate } = require('@google-cloud/local-auth');
+// const { google } = require('googleapis');
+// const fs = require('fs').promises;
+// const path = require('path');
 
-function BhaiyaMain() {
-  return (
-    <div>
-        <table style="width: 97%; margin-left: 16px; margin-top: 25px;">
-    <tr style="color: gray;">
-        <th style="padding-left: 16px;">code</th>
-        <th>authentication</th>
-        <th>exclusionList</th>
-        <th>userCount</th>
-        <th>userLimit</th>
-    </tr>
-    <tr >
-        <td >P12234</td>
-        <td >0</td>
-        <td>1000</td>
-        <td>Na</td>
-        <td>Na</td>
-        {/* <td>
-            <mat-icon (click)="gotoCustomCode()" style="height: 25px; width: 25px; border: 1px solid gray; border-radius: 50%; cursor: pointer;">
-                <span>chevron_right</span>
-            </mat-icon>
-        </td> */}
-    </tr>
-</table>
-    </div>
-  )
-}
+// const TOKEN_PATH = path.join(process.cwd(), 'token.json');
+// const CREDENTIALS_PATH = path.join(process.cwd(), 'credentials.json');
 
-export default BhaiyaMain
+// async function main() {
+//   try {
+//     const auth = await authenticate({
+//       keyfilePath: CREDENTIALS_PATH,
+//       scopes: ['https://www.googleapis.com/auth/drive.metadata.readonly']
+//     });
+
+//     listGoogleForms(auth);
+//   } catch (error) {
+//     console.error('Error:', error.message);
+//   }
+// }
+
+// async function listGoogleForms(auth) {
+//   const drive = google.drive({ version: 'v3', auth });
+//   try {
+//     const res = await drive.files.list({
+//       q: "mimeType='application/vnd.google-apps.form'",
+//       fields: 'files(id, name)',
+//     });
+    
+//     const forms = res.data.files;
+//     if (forms.length) {
+//       console.log('Google Forms IDs:');
+//       forms.forEach((form) => {
+//         console.log(${form.name}: ${form.id});
+//       });
+//     } else {
+//       console.log('No Google Forms found.');
+//     }
+//   } catch (error) {
+//     console.error('Error listing Google Forms:', error.message);
+//   }
+// }
+
+// main();

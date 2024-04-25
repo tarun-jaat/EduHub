@@ -1,11 +1,11 @@
-const {app} =require('./Socket/socket')
-const {server}=require('./Socket/socket')
+// const {app} =require('./Socket/socket')
+// const {server}=require('./Socket/socket')
 const express = require("express");
 // const {Server, Socket}=require("socket.io")
-// const app = express();
+const app = express();
 
 
-
+const mailBroadcast =require('./routes/EmailBroadcast')
 const userRoutes = require("./routes/User");
 const paymentRoutes = require("./routes/Payments");
 const profileRoutes = require("./routes/Profile");
@@ -17,7 +17,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const { cloudnairyconnect } = require("./config/cloudinary");
-
+const allUser=require('./routes/user.route')
 const dotenv = require("dotenv");
 dotenv.config();  
 
@@ -46,6 +46,8 @@ app.use(
 
 cloudnairyconnect();
 
+app.use("/api/v1/email",mailBroadcast)
+
 app.use("/api/v1/auth", userRoutes);
 
 app.use("/api/v1/payment", paymentRoutes);
@@ -56,6 +58,7 @@ app.use("/api/v1/course", CourseRoutes);
 
 app.use("/api/v1/messages", messagesRoutes);
 
+app.use("/api/v1/allUsers",allUser)
 
 app.use("/api/v1/contact", require("./routes/ContactUs"));
 
@@ -64,7 +67,6 @@ app.get("/", (req, res) => {
     message: "Welcome to the API", 
   });
 });
- 
-server.listen(PORT, () => {
+ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });   

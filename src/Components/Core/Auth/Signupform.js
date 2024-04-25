@@ -13,6 +13,7 @@ import { ACCOUNT_TYPE } from "../../../Utils/Constants";
 function Signupform() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  // console.log("hii")
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -192,7 +193,7 @@ function Signupform() {
 
         <button
           type="submit"
-          className="mt-6 rounded-[8px] bg-secondary py-[8px] px-[12px] font-medium text-white hover:bg-transparent border border-2 border-secondary"
+          className="mt-6 rounded-[8px] bg-secondary py-[8px] px-[12px] font-medium text-white hover:bg-transparent  border-2 border-secondary"
         >
           Create Account
         </button>

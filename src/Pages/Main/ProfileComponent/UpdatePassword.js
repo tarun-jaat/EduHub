@@ -40,7 +40,7 @@ export default function UpdatePassword() {
               <span onClick={() => setShowOldPassword((prev) => !prev)} className="absolute right-3 top-[38px] z-[10] cursor-pointer" >       
                 {showOldPassword ? ( <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" /> ) : ( <AiOutlineEye fontSize={24} fill="#AFB2BF"/> )}
               </span>
-              {errors.oldPassword && (<span className="-mt-1 text-[12px] text-yellow-100"> Please enter your Current Password.</span> )}
+              {errors.oldPassword && (<span className="-mt-1 text-[12px] text-pink-500"> Please enter your Current Password.</span> )}
             </div>
            
             <div className="relative flex flex-col gap-2 lg:w-[48%]">
@@ -49,7 +49,7 @@ export default function UpdatePassword() {
               <span onClick={() => setShowNewPassword((prev) => !prev)}  className="absolute right-3 top-[38px] z-[10] cursor-pointer">
                 {showNewPassword ? ( <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" /> ) : ( <AiOutlineEye fontSize={24} fill="#AFB2BF" /> )}
               </span>
-              {errors.newPassword && ( <span className="-mt-1 text-[12px] text-yellow-100"> Please enter your New Password.</span> )}
+              {errors.newPassword && ( <span className="-mt-1 text-[12px] text-pink-500"> !Please enter your New Password.</span> )}
             </div>
 
           </div>

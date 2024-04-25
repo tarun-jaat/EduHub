@@ -18,6 +18,7 @@ import Chat from "./Pages/Messages/Chat";
 import Insights from "./Pages/Main/Insights";
 import Profile from "./Pages/Main/Profile";
 import Setting from "./Pages/Main/Setting";
+import Broadcastemail from "./Pages/Main/Email/Broadcastemail";
 // import Interface from "./Pages/Bhaiya/Interface";
 // import Navbar from "./Components/Common/NavBar.js/Navbar";
 function App() {
@@ -32,21 +33,20 @@ function App() {
       ) : null}
         <Routes >
         <Route path="/" element={<Home />} />
+        
         <Route
-          path="signup"
+          path="/login"
           element={
             <OpenRoute>
-              {" "}
-              <Signup />{" "}
+              <Login />
             </OpenRoute>
           }
         />
         <Route
-          path="login"
+          path="/signup"
           element={
             <OpenRoute>
-              {" "}
-              <Login />{" "}
+              <Signup />
             </OpenRoute>
           }
         />
@@ -54,8 +54,8 @@ function App() {
           path="forgot-password"
           element={
             <OpenRoute>
-              {" "}
-              <ForgotPassword />{" "}
+              
+              <ForgotPassword />
             </OpenRoute>
           }
         />
@@ -63,8 +63,8 @@ function App() {
           path="verify-email"
           element={
             <OpenRoute>
-              {" "}
-              <VerifyEmail />{" "}
+              
+              <VerifyEmail />
             </OpenRoute>
           }
         />
@@ -114,6 +114,13 @@ function App() {
         element={
           <PrivateRoute>
             <Setting/>
+          </PrivateRoute>
+        }/>
+        <Route
+        path="/dashboard/Email"
+        element={
+          <PrivateRoute>
+            <Broadcastemail/>
           </PrivateRoute>
         }/>
       </Routes> 

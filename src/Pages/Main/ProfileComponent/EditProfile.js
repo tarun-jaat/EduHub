@@ -11,6 +11,7 @@ export default function EditProfile() {
 
   const { user } = useSelector((state) => state.profile)
   const { token } = useSelector((state) => state.auth)
+  // console.log(token)
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
@@ -37,12 +38,12 @@ export default function EditProfile() {
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="firstName" className="lable-style">  First Name  </label>
               <input type="text" name="firstName" id="firstName" placeholder="Enter first name" className="form-style" {...register("firstName", { required: true })} defaultValue={user?.firstName} />                      
-              {errors.firstName && ( <span className="-mt-1 text-[12px] text-yellow-100"> Please enter your first name. </span> )}
+              {errors.firstName && ( <span className="-mt-1 text-[12px] text-pink-500"> Please enter your first name. </span> )}
             </div>
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="lastName" className="lable-style"> Last Name </label>
               <input type="text"  name="lastName" id="lastName" placeholder="Enter first name" className="form-style"  {...register("lastName", { required: true })} defaultValue={user?.lastName}  />
-              {errors.lastName && ( <span className="-mt-1 text-[12px] text-yellow-100">  Please enter your last name. </span> )}
+              {errors.lastName && ( <span className="-mt-1 text-[12px] text-pink-500">  Please enter your last name. </span> )}
             </div>
           </div>
 
@@ -62,14 +63,14 @@ export default function EditProfile() {
                 })}
                 defaultValue={user?.additionalDetails?.dateOfBirth}
               />
-              {errors.dateOfBirth && (<span className="-mt-1 text-[12px] text-yellow-100">  {errors.dateOfBirth.message}</span>)}
+              {errors.dateOfBirth && (<span className="-mt-1 text-[12px] text-pink-500">  {errors.dateOfBirth.message}</span>)}
             </div>
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="gender" className="lable-style"> Gender </label>
               <select type="text"  name="gender"  id="gender" className="form-style" {...register("gender", { required: true })}  defaultValue={user?.additionalDetails?.gender} >
                 {genders.map((ele, i) => {return (<option key={i} value={ele}> {ele} </option> )})}
               </select>
-              {errors.gender && ( <span className="-mt-1 text-[12px] text-yellow-100"> Please enter your Date of Birth.</span> )}
+              {errors.gender && ( <span className="-mt-1 text-[12px] text-pink-500"> Please enter your Date of Birth.</span> )}
             </div>
           </div>
 
@@ -87,7 +88,7 @@ export default function EditProfile() {
                 })}
                 defaultValue={user?.additionalDetails?.contactNumber}
               />
-              {errors.contactNumber && (<span className="-mt-1 text-[12px] text-yellow-100">  {errors.contactNumber.message}  </span>  )}
+              {errors.contactNumber && (<span className="-mt-1 text-[12px] text-pink-500">  {errors.contactNumber.message}  </span>  )}
             </div>
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="about" className="lable-style"> About </label>
@@ -95,7 +96,7 @@ export default function EditProfile() {
                 {...register("about", { required: true })}
                 defaultValue={user?.additionalDetails?.about}
               />
-              {errors.about && (<span className="-mt-1 text-[12px] text-yellow-100"> Please enter your About. </span>)}
+              {errors.about && (<span className="-mt-1 text-[12px] text-pink-500"> Please enter your About. </span>)}
             </div>
           </div>
        

@@ -57,6 +57,7 @@ module.exports = {
         800: "#022B32",
         900: "#001B1D",
       },
+      
       caribbeangreen: {
         5: "#C1FFFD",
         25: "#83F1DE",
@@ -129,6 +130,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        '3xl':'[0_20px_50px_rgba(8,_112,_184,_0.7)]',
+      },
       maxWidth: {
         maxContent: "1260px",
         maxContentTab: "650px"
