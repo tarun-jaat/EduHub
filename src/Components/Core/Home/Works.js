@@ -9,7 +9,7 @@ import SE from '../../../Assests/Images/uil_notes.png'
 function Works() {
   return (
     <div  className="works">
-        <div  class="container1">
+        <div  className="container1">
             <img src={Man2}  alt="man2" />
         </div>
         <div className='container2'>

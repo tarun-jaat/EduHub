@@ -110,7 +110,7 @@ function App() {
           }
         />
         <Route
-        path="/dashboard/setting"
+        path="/dashboard/settings"
         element={
           <PrivateRoute>
             <Setting/>

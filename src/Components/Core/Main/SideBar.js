@@ -37,7 +37,7 @@ function SideBar() {
   };
 
   const settingnavigate=()=>{
-    window.location.href="/dashboard/setting"
+    window.location.href="/dashboard/settings"
   }
 
     const OtherData = [

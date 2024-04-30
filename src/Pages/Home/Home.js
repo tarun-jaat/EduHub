@@ -33,16 +33,16 @@ function Home() {
                 <img src={LogoDark} alt="logo"/>
                 </Link>
             </div>
-            <div class="vertical-line"></div>
+            <div className="vertical-line"></div>
             <div className='NavLinks'>
             {HomeNavLinks.map((link, index) => (
-            <Link to={link.path} onClick={() => setActiveLink(index)}>
-              <p className={`nav-link ${activeLink === index ? 'activeNav' : 'noneActiveNav'}`}> {link.title}  </p>
+            <Link key={index} to={link.path} onClick={() => setActiveLink(index)}>
+              <p  className={`nav-link ${activeLink === index ? 'activeNav' : 'noneActiveNav'}`}> {link.title}  </p>
             </Link>
           ))}
 
             </div>
-            <div class="vertical-line"></div>
+            <div className="vertical-line"></div>
             <div className='SignInOut'>
              <Button active={true} linkto={"/Signup"}> Signup </Button>          
             </div>
